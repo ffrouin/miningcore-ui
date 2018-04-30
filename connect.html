@@ -2,28 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/miningcore/assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/miningcore/assets/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-    <title>miningcore-ui</title>
+    <title>blockchain.linuxtribe.fr</title>
 
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport"/>
     <meta name="viewport" content="width=device-width"/>
 
     <!-- Bootstrap core CSS     -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/miningcore/assets/css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Animation library for notifications   -->
-    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+    <link href="/miningcore/assets/css/animate.min.css" rel="stylesheet"/>
 
     <!--  Paper Dashboard core CSS    -->
-    <link href="assets/css/paper-dashboard.css" rel="stylesheet"/>
+    <link href="/miningcore/assets/css/paper-dashboard.css" rel="stylesheet"/>
 
     <!--  Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Muli:400,300" rel="stylesheet"/>
-    <link href="assets/css/themify-icons.css" rel="stylesheet"/>
+    <link href="/miningcore/assets/css/themify-icons.css" rel="stylesheet"/>
 
 </head>
 <body>
@@ -103,12 +103,12 @@
                                 <p></p>
                             </a>
                         </li>
-                        <li>
+                        <!--<li>
                             <a href="#">
                                 <i class="ti-settings"></i>
                                 <p>Settings</p>
                             </a>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -121,91 +121,39 @@
                         <div class="card">
                             <div class="header">
                                 <h4 class="title">Miner Configuration</h4>
-                                <p class="category">This is the basic guide how to setup your miner to this pool.</p>
+                                <p class="category">This is the basic guide how to setup your miner to this pool. Please select the
+                                   currency in the menu in order the pool details (port, diff, fee) to refresh. Default pool details
+                                   displayed is Monero ($XMR).</p>
                             </div>
                             <div class="content">
                                 <div class="typo-line">
-                                    <h5><p class="category">Mine with</p>AMD GPUs</h5>
+                                    <h5><p class="category">Mine <a href="https://coinmarketcap.com/currencies/monero/" target="_blank">Monero (XMR)</a>
+                                        with CPUs, GPUs and <a href="https://github.com/xmrig/" target="_blank">XMRig</a></h5>
                                 </div>
                                 <div class="typo-line">
-                                    <h6><p class="category">Using</p>{miner name}</h6>
+                                    <h5><p class="category">Mine <a href="https://coinmarketcap.com/currencies/litecoin/" target="_blank">Litecoin (LTC)</a>
+                                        with ASICs <a href="https://www.bitshopper.de/shop/scrypt-miner-en/moonlander2/?lang=en" target="_blank">FutureBit Moonlander 2</a> and <a href="https://www.bitshopper.de/support/instructions/moonlander-2/moonlander-2-setup-linux/?lang=en" target="_blank">BFGminer</a></h5>
                                 </div>
                                 <div class="typo-line">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer
-                                        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                                        aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                                    <h5><p class="category">Mine <a href="https://coinmarketcap.com/currencies/vertcoin/" target="_blank">Vertcoin (VTC)</a> 
+                                        with NVidia devices and <a href="https://github.com/tpruvot/ccminer" target="_blank">CCMiner</a></h5>
                                 </div>
                                 <div class="typo-line">
-                                    <h5><p class="category">Mine with</p>Nvidia GPUs</h5>
+                                    <h5><p class="category">Mine <a href="https://coinmarketcap.com/currencies/bitcoin/" target="_blank">Bitcoin (BTC)</a>
+                                        with NVidia devices and <a href="https://github.com/tpruvot/ccminer" target="_blank">CCMiner</a></h5>
                                 </div>
+                               <p class="category">All miner software will allmost require the same options to connect successfully :<br/><br/>
+                                   -a &#60;algo&#62; -o stratum+tcp://andromede.linuxtribe.fr:&#60;port&#62; -u &#60;your_wallet_address&#62;<br/><br/>
+                                   You don't need a password to connect to stratum server. You will appear in the list of active miners after
+                                   you start find some share and the server to refresh the dashboard.</p>
+                             <br/>
+                             <h4 class="title">Support</h4>
                                 <div class="typo-line">
-                                    <h6><p class="category">Using</p>{miner name}</h6>
-                                </div>
-                                <div class="typo-line">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer
-                                        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                                        aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
-                                </div>
-                                <div class="typo-line">
-                                    <h5><p class="category">Mine with</p>ASICs</h5>
-                                </div>
-                                <div class="typo-line">
-                                    <h6><p class="category">Using</p>{miner name}</h6>
-                                </div>
-                                <div class="typo-line">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer
-                                        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                                        aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
-                                </div>
-                                <!--<div class="typo-line">
-                                    <p class="category">Quote</p>
-                                    <blockquote>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                            nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-                                            wisi enim ad minim veniam.
-                                        </p>
-                                        <small>
-                                            Steve Jobs, CEO Apple
-                                        </small>
-                                    </blockquote>
-                                </div>
-                                <div class="typo-line">
-                                    <p class="category">Muted Text</p>
-                                    <p class="text-muted">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                                        euismod tincidunt ut laoreet.
-                                    </p>
-                                </div>
-                                <div class="typo-line">
-                                    <p class="category">Coloured Text</p>
-                                    <p class="text-primary">
-                                        Text Primary - Light Bootstrap Table Heading and complex bootstrap dashboard
-                                        you've ever seen on the internet.
-                                    </p>
-                                    <p class="text-info">
-                                        Text Info - Light Bootstrap Table Heading and complex bootstrap dashboard you've
-                                        ever seen on the internet.
-                                    </p>
-                                    <p class="text-success">
-                                        Text Success - Light Bootstrap Table Heading and complex bootstrap dashboard
-                                        you've ever seen on the internet.
-                                    </p>
-                                    <p class="text-warning">
-                                        Text Warning - Light Bootstrap Table Heading and complex bootstrap dashboard
-                                        you've ever seen on the internet.
-                                    </p>
-                                    <p class="text-danger">
-                                        Text Danger - Light Bootstrap Table Heading and complex bootstrap dashboard
-                                        you've ever seen on the internet.
-                                    </p>
-                                </div>
-                                <div class="typo-line">
-                                    <h2><p class="category">Small Tag</p>Header with small subtitle <br>
-                                        <small>".small" is a tag for the headers</small>
-                                    </h2>
-                                </div>-->
-                            </div>
+			       <p class="category">If required you can address your support request by email to<br/>
+                                         <a href="mailto:mining-support@linuxtribe.fr">mining-support@linuxtribe.fr</a></p>
+				<p class="category">Actually you'll need to contact us in order we open stream access to the stratum service (static IPv4 addresses required). This service is not widely open to the Internet as it remains a platform to test and learn about cryptocurrency mining.</p>
+                              </div>
+                           </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12">
@@ -249,25 +197,25 @@
 </body>
 
 <!--   Core JS Files   -->
-<script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/miningcore/assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="/miningcore/assets/js/bootstrap.min.js" type="text/javascript"></script>
 
 <!--  Checkbox, Radio & Switch Plugins -->
-<script src="assets/js/bootstrap-checkbox-radio.js"></script>
+<script src="/miningcore/assets/js/bootstrap-checkbox-radio.js"></script>
 
 <!--  Charts Plugin -->
-<script src="assets/js/chartist.min.js"></script>
+<script src="/miningcore/assets/js/chartist.min.js"></script>
 
 <!--  Notifications Plugin    -->
-<script src="assets/js/bootstrap-notify.js"></script>
+<script src="/miningcore/assets/js/bootstrap-notify.js"></script>
 
 <!--  Google Maps Plugin    -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
 <!-- Paper Dashboard Core javascript and methods -->
-<script src="assets/js/paper-dashboard.js"></script>
+<script src="/miningcore/assets/js/paper-dashboard.js"></script>
 
-<script src="assets/js/miningcore-ui.js"></script>
+<script src="/miningcore/assets/js/miningcore-ui.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         var renderCallback = $.Callbacks();
